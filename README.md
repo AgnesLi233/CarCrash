@@ -82,6 +82,9 @@ All files in the CCD dataset was saved in a Google Drive folder provided by Bao 
   * Architecture: The architecture of MobileNet-SSD v3 features depth-wise separable convolutions, re- ducing parameter count. It utilizes bottleneck layers and squeeze-and-excitation blocks for feature enhancement, and a convolutional SSD head for multi-scale object detection. ReLU6 activations aid in hardware optimization, and the model employs Smooth L1 and cross-entropy loss functions for bounding box regression and classification, respectively. 
   * Re-training: the MobileNet is pre-trained on the COCO dataset. To improve the model’s performance on traffic conditions, we re-train the model on Open Images dataset with ‘car’ and ‘truck’ classes to.
 * YOLOv8
+  * Model detail: The project has also upgraded object detection model from YOLOv5 to YOLOv8 for better performance. The Ultralytics YOLOv8 is used in this project. YOLOv8 is a state-of-the-art model that builds upon previous versions of YOLO and introduces new features and improvements to further boost performance and flexibility. YOLOv8 contains model for the following tasks: detection and tracking, segmentation, classification and pose. The library contains 5 different sizes of pretrained models: nano, small, medium, large, huge. Greater model size generally requires longer training/predicting time.
+  * Preprocess: YOLOv8 accepts images. Videos are preprocessed using the approach described in the original GitHub repository. Each video was split equally into 50 individual frames. 
+  * Implementation: Medium size YOLOv8 model for segmentation was used to generate bounding boxes. 
 ### Sliding Window
 ### Updated Decoder
 #### ConvLSTM2D
