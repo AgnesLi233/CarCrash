@@ -1,4 +1,14 @@
-# CarCrash Prediction
+# CarCrash Accident Prediction
+
+
+## Content
+
+1. Project Description
+2. Dataset
+3. Project Framework
+4. Code Structure
+5. Results and Observations
+6. References
 
 ## Project Description
 
