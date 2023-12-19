@@ -1,4 +1,4 @@
-# CarCrash Accident Prediction
+# Car Crash Accident Prediction
 
 
 ## Content
