@@ -78,6 +78,9 @@ All files in the CCD dataset was saved in a Google Drive folder provided by Bao 
 
 ### Updated Bounding Box Masks Extractor
 * MobileNet-SSD v3
+  * Model detail: The project has transitioned from YOLOv5 to MobileNet-SSD v3 for object detection due to its suitability for mobile deployment. MobileNet-SSD v3, a single-shot detector, is optimized for mobile devices, offering real-time processing capabilities for dashcam video feeds directly on smartphones. This marks an improvement over YOLOv5’s resource-heavy design. 
+ * Architecture: The architecture of MobileNet-SSD v3 features depth-wise separable convolutions, re- ducing parameter count. It utilizes bottleneck layers and squeeze-and-excitation blocks for feature enhancement, and a convolutional SSD head for multi-scale object detection. ReLU6 activations aid in hardware optimization, and the model employs Smooth L1 and cross-entropy loss functions for bounding box regression and classification, respectively. 
+ * Re-training: the MobileNet is pre-trained on the COCO dataset. To improve the model’s performance on traffic conditions, we re-train the model on Open Images dataset with ‘car’ and ‘truck’ classes to.
 * YOLOv8
 ### Sliding Window
 ### Updated Decoder
