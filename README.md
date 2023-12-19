@@ -85,10 +85,17 @@ All files in the CCD dataset was saved in a Google Drive folder provided by Bao 
 * YOLOv8
   * Model detail: The project has also upgraded object detection model from YOLOv5 to YOLOv8 for better performance. The Ultralytics YOLOv8 is used in this project. YOLOv8 is a state-of-the-art model that builds upon previous versions of YOLO and introduces new features and improvements to further boost performance and flexibility. YOLOv8 contains model for the following tasks: detection and tracking, segmentation, classification and pose. The library contains 5 different sizes of pretrained models: nano, small, medium, large, huge. Greater model size generally requires longer training/predicting time.
   * Preprocess: YOLOv8 accepts images. Videos are preprocessed using the approach described in the original GitHub repository. Each video was split equally into 50 individual frames. 
-  * Implementation: Medium size YOLOv8 model for segmentation was used to generate bounding boxes. 
+  * Implementation: Medium size YOLOv8 model for segmentation was used to generate bounding boxes.
+### Mask Generator & Updated Decoder
+* Mask Generator
+  * The Mask generator takes the coordinates from YOLOv8 and MobileNet-SSD v3 as input, and generates masks the is white and black. The white parts is the region of the bounded by the boxes, while the black part is the removed background.
+* Updated Decoder
+  * The updated decoder takes 1280*720p masks and extracts frame-based features to feed into ConvLSTM2D.
 ### Sliding Window
-### Updated Decoder
-#### ConvLSTM2D
+* The create_shifting_window function segments videos into overlapping windows by spliting the feature frames, creating samples that provide temporal context for the model. 
+
+### ConvLSTM2D
+* Our methodology for predicting car accidents from video sequences involves preprocessing data using a sliding window technique and employing a ConvLSTM-based deep learning model, designed to handle the spatial-temporal complexities of video data. The ConvLSTM2D layers are key, merging spatial and temporal data analysis, a capability beyond that of traditional LSTMs, by integrating convolutional structures within LSTM units. This approach allows for capturing intricate patterns in both individual frames and across sequences, essential for anticipating accidents.
 
 
 ## Code Structure
