@@ -24,13 +24,13 @@ CCD contains real traffic accident videos captured by dashcamin mp4 format colle
 * 3,000 normal videos randomly sampled from the BDD100K dataset.
 
 Annotations of 1,500 accident videos are saved in txt files. Each line contains the following attributes:
-* vidname
-* binlabels(targets)
-* startframe
-* youtubeID
-* timing
-* weather
-* egoinvolve.
+* vidname: Video name, i.e., 000018
+* binlabels(targets): Binary label of frames in video, where 1 indicates accident frame
+* startframe：For YouTube normal video, this is the zero-padded starting frame of each video
+* youtubeID: Numeric YouTube video identifier
+* timing: Timing of the day, i.e., day or night
+* weather: Weather conditions of the time, i.e., Normal, Snowy, and Rainy.
+* egoinvolve: Boolean identifier to indicate wheather the ego-vehicle is involved in the accident
 
 The author also includes feature files in npz format containing the following parts:
 * data: VGG-16 features of all frames in the video
