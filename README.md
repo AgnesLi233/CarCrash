@@ -11,6 +11,7 @@
 6. [References](#References)
 
 ## Project Description 
+![YOLOv8](https://github.com/AgnesLi233/CarCrash/assets/104687808/2587c947-b4f9-484a-9846-fb72ccc2e907)
 
 The increasing frequency and severity of traffic accidents have raised significant concerns for public safety and prompted the need for advanced accident detection systems. In response to this pressing issue, this project presents a novel approach for traffic accident detection, aimed at improving road safety and reducing associated human and economic costs. Traditional LiDAR systems are undoubtedly effective in detecting objects; however, they fall short in object identification capabilities. This limitation hinders the decision-making process of vehicles, occasionally leading to impractical or unsafe responses. In the paper "Traffic Accident Detection Using Background Subtraction and CNN Encoder–Transformer Decoder in Video Frames," a method for detecting traffic accidents in videos is proposed, involving background subtraction, CNN encoder (YOLOv5), and a Transformer decoder. To enhance this method, the following improvements were made: upgrading the CNN Encoder to YOLOv8, or MobileNet-SSD v3, Consider employing ConvLSTM for crash prediction. This research contributes to the ongoing efforts to enhance road safety and emergency response, offering a promising solution for timely accident detection and response to mitigate impacts of accidents on roadways.
 
@@ -115,12 +116,18 @@ For framesplit.py, frame images is saved in this [Google Drive](https://drive.go
 ## Results and Observations
 
 ### Model Performance
-* MobileNet-SSD v3: [TODO example result picture]
-* YOLOv8: [TODO example result picture]
+* MobileNet-SSD v3: ![download](https://github.com/AgnesLi233/CarCrash/assets/104687808/7d246724-de67-4677-8755-952517721220)
+
+* YOLOv8:
+<img width="726" alt="yolov8cmp" src="https://github.com/AgnesLi233/CarCrash/assets/104687808/3ed05970-cb6b-416a-8663-66862e742902">
+
 As we can observed in this figure, small model size shows relatively high accuracy for bounding box prediction compared to bounding boxes given by the dataset. But sometimes larger models might cause overfitting. For example, a backpack at the corner could be recognized as a traffic light for large model but not small model.
-* Mask Generator: [TODO example result picture]
-* ConvLSTM2D, Sliding Window: [TODO some result data]
-### Bad Cases ?
+
+* ConvLSTM2D, Sliding Window:![image](https://github.com/AgnesLi233/CarCrash/assets/104687808/423e7e81-4005-459e-8082-ec7821ecf324)
+
+### Bad Cases
+![download (1)](https://github.com/AgnesLi233/CarCrash/assets/104687808/241daba3-3af3-4d01-a09b-04524e8db899)
+
 
 ### Insights
 *For MobileNet v3, we observed a poor performance under rainy and dark environments. For future work, increase instances of such conditions in the training process to improve its capability of successful b-box extraction.
