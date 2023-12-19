@@ -91,6 +91,26 @@ All files in the CCD dataset was saved in a Google Drive folder provided by Bao 
 
 
 ## Code Structure
+```
+CarCrash
+├── data
+     └─────── openimagedownloader.py (Downloading data from Open Images Dataset)
+├── MobileNet-SSDv3
+     ├─────── train_mobilenet.py (Re-training the MobileNet v3 using Open Images)
+     └─────── object_detection_mobilenetv3.py (Output the detected bounding boxes and save as npc files)
+├── YOLOv8
+     ├─────── framesplit.py (Split each video for each frame)
+     ├─────── yolov8boundingbox.py (Generate bounding box using YOLOv8)
+     └─────── yolov8example.py (Plot bounding box example)
+└── MobileNet-SSDv3
+     ├─────── frozen_inference_graph.pb
+     ├─────── labels.txt
+     ├─────── ssd_mobilenet_v3_large_coco_2020_01_14.pbtxt
+     ├─────── train_mobilenet.py
+     └─────── object_detection_mobilenetv3.py
+
+```
+For framesplit.py, frame images is saved in this [Google Drive](https://drive.google.com/drive/folders/1eDTVUQTuhTwwRhVpTbu9ZPKVHOXOhpXL?usp=share_link).
 
 ## Results and Observations
 
