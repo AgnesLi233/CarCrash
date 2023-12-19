@@ -21,7 +21,7 @@ The Car Crush Dataset (CCD) in the paper “Uncertainty-based Traffic Accident A
 
 CCD contains real traffic accident videos captured by dashcamin mp4 format collected from 2 sources: 
 ```
-* 1,500 trimmed video collected on Youtube, each containing 50 frames
+- 1,500 trimmed video collected on Youtube, each containing 50 frames
 * 3,000 normal videos randomly sampled from the BDD100K dataset
 ```
 
