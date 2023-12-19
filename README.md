@@ -103,7 +103,8 @@ Datasets
 Models
 * MobileNet-SSD v3: https://docs.openvino.ai/2023.2/omz_models_model_mobilenet_ssd.html
 * YOLOv8: https://docs.ultralytics.com
-* 
+* ConvLSTM: https://www.tensorflow.org/api_docs/python/tf/keras/layers/ConvLSTM2D
 
 Paper
-* 
+* Zhang, Y.; Sung, Y. Traffic Accident Detection Using Background Subtraction and CNN Encoder–Transformer Decoder in Video Frames. Mathematics 2023, 11, 2884. https://doi.org/10.3390/math11132884
+* Haleh Damirchi, Michael Greenspan, Ali Etemad, "Context-Aware Pedestrian Trajectory Prediction with Multimodal Transformer", 2023 IEEE International Conference on Image Processing (ICIP), pp.2535-2539, 2023.  https://ieeexplore.ieee.org/abstract/document/8967556
