@@ -3,19 +3,19 @@
 
 ## Content
 
-1. Project Description
-2. Dataset
-3. Project Framework
-4. Code Structure
-5. Results and Observations
-6. References
+1. [Project Description](1)
+2. [Dataset](2)
+3. [Project Framework](3)
+4. [Code Structure](4)
+5. [Results and Observations](5)
+6. [References](6)
 
-## Project Description
+## Project Description{1}
 
 The increasing frequency and severity of traffic accidents have raised significant concerns for public safety and prompted the need for advanced accident detection systems. In response to this pressing issue, this project presents a novel approach for traffic accident detection, aimed at improving road safety and reducing associated human and economic costs. Traditional LiDAR systems are undoubtedly effective in detecting objects; however, they fall short in object identification capabilities. This limitation hinders the decision-making process of vehicles, occasionally leading to impractical or unsafe responses. In the paper "Traffic Accident Detection Using Background Subtraction and CNN Encoder–Transformer Decoder in Video Frames," a method for detecting traffic accidents in videos is proposed, involving background subtraction, CNN encoder (YOLOv5), and a Transformer decoder. To enhance this method, the following improvements were made: upgrading the CNN Encoder to YOLOv8, or MobileNet-SSD v3, Consider employing ConvLSTM for crash prediction. This research contributes to the ongoing efforts to enhance road safety and emergency response, offering a promising solution for timely accident detection and response to mitigate impacts of accidents on roadways.
 
 
-## Dataset
+## Dataset{2}
 
 The Car Crush Dataset (CCD) in the paper “Uncertainty-based Traffic Accident Anticipation with Spatio-Temporal Relational Learning” will be used for the project. CCD stands as a suitable choice for pursuing our interest in improving existing methods for real-time traffic accident detection within vehicle settings. The annotations, encompassing diverse attributes, allow for contextual information integration, potentially enhancing the model's capacity to recognize and predict accidents across various conditions. Most importantly, we deliberately use the same dataset as the original paper but with improvements on models and preprocessing methods in order to make the resulting metrics comparable. 
 
@@ -74,7 +74,8 @@ All files in the CCD dataset was saved in a Google Drive folder provided by Bao 
 
 
 
-## Project Framework
+## Project Framework{3}
+
 ### Updated Bounding Box Masks Extractor
 * MobileNet-SSD v3
 * YOLOv8
@@ -83,9 +84,9 @@ All files in the CCD dataset was saved in a Google Drive folder provided by Bao 
 #### ConvLSTM2D
 
 
-## Code Structure
+## Code Structure{4}
 
-## Results and Observations
+## Results and Observations{5}
 
 ### Model Performance
 * MobileNet-SSD v3: [TODO example result picture]
@@ -96,7 +97,7 @@ All files in the CCD dataset was saved in a Google Drive folder provided by Bao 
 
 ### Insights
 
-## References
+## References{6}
 Datasets
 * CarCrashDataset(CCD): https://github.com/Cogito2012/CarCrashDataset#overview
 
