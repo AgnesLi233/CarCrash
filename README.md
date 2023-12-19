@@ -119,7 +119,10 @@ For framesplit.py, frame images is saved in this [Google Drive](https://drive.go
 * MobileNet-SSD v3: ![download](https://github.com/AgnesLi233/CarCrash/assets/104687808/7d246724-de67-4677-8755-952517721220)
 
 * YOLOv8:
-<img width="726" alt="yolov8cmp" src="https://github.com/AgnesLi233/CarCrash/assets/104687808/3ed05970-cb6b-416a-8663-66862e742902">
+* 
+<div align="center">
+    <img width="726" alt="yolov8cmp" src="https://github.com/AgnesLi233/CarCrash/assets/104687808/3ed05970-cb6b-416a-8663-66862e742902">
+</div>
 
 As we can observed in this figure, small model size shows relatively high accuracy for bounding box prediction compared to bounding boxes given by the dataset. But sometimes larger models might cause overfitting. For example, a backpack at the corner could be recognized as a traffic light for large model but not small model.
 
