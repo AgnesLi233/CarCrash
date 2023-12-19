@@ -38,6 +38,38 @@ The author also includes feature files in npz format containing the following pa
 * labels: One-hot video labels to indicate whether the video contains an accident
 * ID: Video name and unique identification
 
+Following is the file structure of CCD folder provided by Bao et al.:
+<code>
+CarCrash
+├── codes                    # useful codes for analyzing the dataset
+├── vgg16_features
+│   ├── positive             # feature files of possitive (accident) videos
+│   │   ├── 000001.npz
+│   │   ├── ...
+│   │   └── 001500.npz
+│   ├── negative             # feature files of negative (normal) videos
+│   │   ├── 000001.npz
+│   │   ├── ...
+│   │   └── 003000.npz
+│   ├── train.txt            # list file of training split 
+│   └── test.txt             # list file of testing split 
+├── videos
+│   ├── Normal               # normal driving videos
+│   │   ├── 000001.mp4
+│   │   ├── ...
+│   │   └── 003000.mp4
+│   ├── Crash-1500           # crash accident videos
+│   │   ├── 000001.mp4
+│   │   ├── ...
+│   │   └── 001500.mp4
+│   └── Crash-1500.txt       # annotation file for crash accident
+└── README.md
+<code>
+
+All files in the CCD dataset was saved in a Google Drive folder provided by Bao et al. in the original [Cogito2012/CarCrashDataset](https://github.com/Cogito2012/CarCrashDataset#overview) GitHub repository. Download CCD from [Google Drive](https://drive.google.com/drive/folders/1NUwC-bkka0-iPqhEhIgsXWtj0DA2MR-F).
+
+
+
 ## Project Framework
 ### Updated Bounding Box Masks Extractor
 * MobileNet-SSD v3
