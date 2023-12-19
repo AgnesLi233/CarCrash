@@ -1,4 +1,4 @@
-# CarCrash
+# CarCrash Prediction
 ## Project Description
 ## Dataset
 ## Updated Bounding Box Masks Extractor
