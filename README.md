@@ -17,6 +17,26 @@ The increasing frequency and severity of traffic accidents have raised significa
 
 ## Dataset
 
+The Car Crush Dataset (CCD) in the paper “Uncertainty-based Traffic Accident Anticipation with Spatio-Temporal Relational Learning” will be used for the project. CCD stands as a suitable choice for pursuing our interest in improving existing methods for real-time traffic accident detection within vehicle settings. The annotations, encompassing diverse attributes, allow for contextual information integration, potentially enhancing the model's capacity to recognize and predict accidents across various conditions. Most importantly, we deliberately use the same dataset as the original paper but with improvements on models and preprocessing methods in order to make the resulting metrics comparable. 
+
+CCD contains real traffic accident videos captured by dashcamin mp4 format collected from 2 sources: 
+* 1,500 trimmed video collected on Youtube, each containing 50 frames;
+* 3,000 normal videos randomly sampled from the BDD100K dataset.
+
+Annotations of 1,500 accident videos are saved in txt files. Each line contains the following attributes:
+* vidname
+* binlabels(targets)
+* startframe
+* youtubeID
+* timing
+* weather
+* egoinvolve.
+
+The author also includes feature files in npz format containing the following parts:
+* data: VGG-16 features of all frames in the video
+* det: Detected bounding boxes of all frames, where det of one frame is denoted by (x1, y1, x2, y2, prob, cls)
+* labels: One-hot video labels to indicate whether the video contains an accident
+* ID: Video name and unique identification
 
 ## Project Framework
 ### Updated Bounding Box Masks Extractor
