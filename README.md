@@ -125,7 +125,7 @@ For framesplit.py, frame images is saved in this [Google Drive](https://drive.go
 * MobileNet-SSD v3: ![download](https://github.com/AgnesLi233/CarCrash/assets/104687808/7d246724-de67-4677-8755-952517721220)
 
 * YOLOv8:
-* 
+
 <div align="center">
     <img width="726" alt="yolov8cmp" src="https://github.com/AgnesLi233/CarCrash/assets/104687808/3ed05970-cb6b-416a-8663-66862e742902">
 </div>
