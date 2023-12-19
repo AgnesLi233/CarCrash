@@ -139,10 +139,10 @@ As we can observed in this figure, small model size shows relatively high accura
 
 
 ### Insights
-*For MobileNet v3, we observed a poor performance under rainy and dark environments. For future work, increase instances of such conditions in the training process to improve its capability of successful b-box extraction.
-*For YOLOv8, we observed a relatively stable and accurate performance but slow training time. For future work, improvement could be made by reducing model size to reduce training time while finetune with more data to maintain high accuracy.
-*Train the ConvLSTM2D with extracted features on YOLOV8 and MobileNet v3
-*With better hardware, train on bigger datasets, with more dynamic sliding window.
+* For MobileNet v3, we observed a poor performance under rainy and dark environments. For future work, increase instances of such conditions in the training process to improve its capability of successful b-box extraction.
+* For YOLOv8, we observed a relatively stable and accurate performance but slow training time. For future work, improvement could be made by reducing model size to reduce training time while finetune with more data to maintain high accuracy.
+* Train the ConvLSTM2D with extracted features on YOLOV8 and MobileNet v3
+* With better hardware, train on bigger datasets, with more dynamic sliding window.
 
 ## References
 Datasets
