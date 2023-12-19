@@ -3,11 +3,11 @@
 
 ## Content
 
-1. [Project Description]
+1. [Project Description](#Project-Description)
 2. [Dataset](#Dataset)
-3. [Project Framework](#Project Framework)
-4. [Code Structure](#Code Structure)
-5. [Results and Observations](#Results and Observations)
+3. [Project Framework](#Project-Framework)
+4. [Code Structure](#Code-Structure)
+5. [Results and Observations](#Results-and-Observations)
 6. [References](#References)
 
 ## Project Description 
