@@ -98,8 +98,12 @@ All files in the CCD dataset was saved in a Google Drive folder provided by Bao 
 
 ## References
 Datasets
-* 
+* https://github.com/Cogito2012/CarCrashDataset#overview
+
 Models
+* MobileNet-SSD v3: https://docs.openvino.ai/2023.2/omz_models_model_mobilenet_ssd.html
+* YOLOv8: https://docs.ultralytics.com
 * 
+
 Paper
 * 
