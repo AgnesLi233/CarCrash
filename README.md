@@ -3,7 +3,7 @@
 
 ## Content
 
-1. [Project Description](#Project Description)
+1. [Project Description]
 2. [Dataset](#Dataset)
 3. [Project Framework](#Project Framework)
 4. [Code Structure](#Code Structure)
