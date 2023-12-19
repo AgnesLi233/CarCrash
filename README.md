@@ -20,28 +20,26 @@ The increasing frequency and severity of traffic accidents have raised significa
 The Car Crush Dataset (CCD) in the paper “Uncertainty-based Traffic Accident Anticipation with Spatio-Temporal Relational Learning” will be used for the project. CCD stands as a suitable choice for pursuing our interest in improving existing methods for real-time traffic accident detection within vehicle settings. The annotations, encompassing diverse attributes, allow for contextual information integration, potentially enhancing the model's capacity to recognize and predict accidents across various conditions. Most importantly, we deliberately use the same dataset as the original paper but with improvements on models and preprocessing methods in order to make the resulting metrics comparable. 
 
 CCD contains real traffic accident videos captured by dashcamin mp4 format collected from 2 sources: 
-```
-- 1,500 trimmed video collected on Youtube, each containing 50 frames
+* 1,500 trimmed video collected on Youtube, each containing 50 frames
 * 3,000 normal videos randomly sampled from the BDD100K dataset
-```
 
 Annotations of 1,500 accident videos are saved in txt files. Each line contains the following attributes:
 ```
-* vidname: Video name, i.e., 000018
-* binlabels(targets): Binary label of frames in video, where 1 indicates accident frame
-* startframe：For YouTube normal video, this is the zero-padded starting frame of each video
-* youtubeID: Numeric YouTube video identifier
-* timing: Timing of the day, i.e., day or night
-* weather: Weather conditions of the time, i.e., Normal, Snowy, and Rainy.
-* egoinvolve: Boolean identifier to indicate wheather the ego-vehicle is involved in the accident
+- vidname: Video name, i.e., 000018
+- binlabels(targets): Binary label of frames in video, where 1 indicates accident frame
+- startframe：For YouTube normal video, this is the zero-padded starting frame of each video
+- youtubeID: Numeric YouTube video identifier
+- timing: Timing of the day, i.e., day or night
+- weather: Weather conditions of the time, i.e., Normal, Snowy, and Rainy.
+- egoinvolve: Boolean identifier to indicate wheather the ego-vehicle is involved in the accident
 ```
 
 The author also includes feature files in npz format containing the following parts:
 ```
-* data: VGG-16 features of all frames in the video
-* det: Detected bounding boxes of all frames, where det of one frame is denoted by (x1, y1, x2, y2, prob, cls)
-* labels: One-hot video labels to indicate whether the video contains an accident
-* ID: Video name and unique identification
+- data: VGG-16 features of all frames in the video
+- det: Detected bounding boxes of all frames, where det of one frame is denoted by (x1, y1, x2, y2, prob, cls)
+- labels: One-hot video labels to indicate whether the video contains an accident
+- ID: Video name and unique identification
 ```
 
 Following is the file structure of CCD folder provided by Bao et al.:
